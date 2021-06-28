@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/CompetitionSeason.css">
+    <script defer src='https://use.fontawesome.com/releases/v5.0.7/js/all.js'></script>
+    <title>COMPETITION SEASON</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;900&display=swap" rel="stylesheet">
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                let $nav = $(".nav");
+                let listElements = $(".dd h3");
+                let listLinks = $(".nav-list li a");
+                let brand = $(".brand-nav h3 a");
+                let ddElements = $(".dd-menu ul li a");
+                let image = $(".brand-nav img");
+                let image2 = document.querySelector(".brand-nav img")
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+                listElements.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
+                listLinks.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
+                brand.toggleClass('scrolledList', $(this).scrollTop() > $nav.height());
+                image.toggleClass('scrolledImg', $(this).scrollTop() > $nav.height());
+                ddElements.toggleClass('scrolledNav', $(this).scrollTop() > $nav.height());
+                if ($(this).scrollTop() > $nav.height()) {
+                    image2.setAttribute("src", "Photos/picture1-1-354x178.png");
+                } else {
+                    image2.setAttribute("src", "Photos/Logo.png");
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- start of navbar -->
+    <section class="navbar">
+        <div class="nav">
+            <div class="brand-nav">
+                <img src="Photos/Logo.png" alt="brand-img" />
+                <h3><a href="#">AXLR8R FORMULA RACING</a></h3>
+                <div class="ham">
+                    <div class="line line-1"></div>
+                    <div class="line line-2"></div>
+                    <div class="line line-3"></div>
+                </div>
+            </div>
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="simple-link">
+                        <a href="#">HOME</a>
+                    </li>
+                    <li class="dd">
+                        <h3 class="about">ABOUT US<i class="fas fa-angle-down icon"></i></h3>
+                        <div class="about-dd dd-menu">
+                            <ul>
+                                <li>
+                                    <a href="https://www.w3schools.com/css/css_combinators.asp">OUR CREW</a>
+                                </li>
+                                <li>
+                                    <a href="#">DEPARTMENTAL BREAKDOWN</a>
+                                </li>
+                                <li>
+                                    <a href="#">TESTIMONIALS</a>
+                                </li>
+                                <li>
+                                    <a href="#">OUR ACHIEVEMENTS</a>
+                                </li>
+                                <li>
+                                    <a href="#">TIMELINE</a>
+                                </li>
+                                <!-- <li>
+                                    <a href="#">COMPETITION SEASON</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="dd">
+                        <h3 class="cars">CARS<i class="fas fa-angle-down icon"></i></h3>
+                        <div class="cars-dd dd-menu">
+                            <ul>
+                                <li>
+                                    <a href="#">ELECTRIC CARS</a>
+                                </li>
+                                <li>
+                                    <a href="#">COMBUSTION CARS</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="simple-link">
+                        <a href="#">ALBUMS</a>
+                    </li>
+                    <li class="simple-link">
+                        <a href="#">FORMULA STUDENT</a>
+                    </li>
+                    <li class="simple-link">
+                        <a href="#">SPONSORS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- end of navbar -->
+    <!-- start of main content -->
+    <section class="content">
+        <div class="main">
+            <h1><span class="color">COMPETITION</span> SEASON 2019</h1>
+            <p>In the competition season 2019, Axlr8r Formula Racing competed in two prestigious Formula Student
+                competitions – in the <span class="color">Formula Bharat</span> and in <span class="color">Formula
+                    Student Germany.</span></p>
+        </div>
+        <div class="fsg comp">
+            <h2>formula student <span class="color">germany 2019</span></h2>
+            <p>This competition was held from 5th to 11th August in Hockenheim, Germany, also known as World
+                Championship of Formula Student Events and the <span class="color">World’s biggest University Level
+                    Design Competition.</span> The
+                competition saw the participation of 118 teams from over 25 nations with more than <span
+                    class="color">3000 participants and
+                    6000 visitors.</span> </p>
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="overlay"></div>
+                        <div class="desc">
+                            <h2>FIRST INDIAN ELECTRIC TEAM TO CLEAR all <span class="color">TECHNICAL INSPECTIONS.</span></h2>
+                        </div>
+                        <img src="Photos/20190810-15-36-46-0191-gosala-2-1353x762.jpg" class="carousel-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay"></div>
+                        <div class="desc">
+                            <h2>only Indian electric team to drive our car on <span class="color">German tracks.</span> </h2>
+                        </div>
+                        <img src="Photos/20190807-14-04-08-7907-klein-xl-2-1024x576.jpg" class="carousel-image" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="fsb comp">
+            <h2>formula student <span class="color">bharat 2019</span></h2>
+            <p>Formula Bharat is an engineering design competition in which students from colleges and universities all
+                over the country compete with a <span class="color">life-size Formula-style vehicle</span> in areas of
+                engineering design, overall
+                cost, marketability and dynamic performance. The series replicates the global student Formula series
+                hosted in <span class="color">around 11 countries per year.</span> </p>
+            <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="overlay"></div>
+                        <div class="desc">
+                            <h2>WON <span class="color">OVERALL RUNNERS-UP</span> TROPHY IN THE EVENT</h2>
+                        </div>
+                        <img src="Photos/20190810-15-36-46-0191-gosala-2-1353x762.jpg" class="carousel-image" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <div class="overlay"></div>
+                        <img src="Photos/20190806-11-57-27-5603-rankin-2-1353x762.jpg" class="carousel-image" alt="...">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls2" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <div class="quiz comp">
+            <h2>quiz <span class="color">performance</span></h2>
+            <p>The first hurdle to clear for a successful FSG participation is to stand out in the Quiz. <span class="color">More than 300
+                teams</span> throughout the world from various universities participate and only 40 teams qualify and get the
+                opportunity to be a part of the biggest design event in the world. Along with FSG, our team also
+                qualified for Formula Student Austria 2019 quiz with <span class="color">14th rank worldwide in the electric category.</span></p>
+            <div class="table">
+                <h3><i class="fas fa-trophy icon-1"></i>fs austria 2019 quiz</h3>
+                <h3><i class="fas fa-trophy icon-1"></i>formula bharat 2019 quiz</h3>
+                <h3><i class="fas fa-trophy icon-1"></i>formula student germany 2019</h3>
+            </div>
+        </div>
+    </section>
+    <!-- end of main content -->
+    <section class='footer'>
+        <footer id="footerID">
+
+
+            <div class="row footer-row">
+                <div class="col-lg-4 address">
+                    <h4>ADDRESS</h4>
+                    <p>WS 117-A, Central Workshop,
+                        IIT Delhi, Hauz Khas,
+                        New Delhi,
+                        Pin - 110016</p>
+                </div>
+                <div class="col-lg-4 contacts">
+                    <h4>CONTACTS</h4>
+                    <p>TEAM CAPTAIN: DEEPANSU KAUSHIK</p>
+                    <p>Email: kaushik.deepansu@gmail.com</p>
+                    <p>Phone: +91 8368141685</p>
+                </div>
+                <div class="col-lg-4">
+                    <div id="googleMap"></div>
+
+                    <script>
+                        function myMap() {
+                            var mapProp = {
+                                center: new google.maps.LatLng(51.508742, -0.120850),
+                                zoom: 5,
+                            };
+                            var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                        }
+                    </script>
+
+                    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+                </div>
+                <div class="col-lg-6 feedback">
+                    <h4>FEEDBACK</h4>
+                    <p>Please send us your ideas, bug reports, suggestions! Any feedback would be appreciated.</p>
+                </div>
+            </div>
+            <div class="social-media">
+                <h3>Feel Free To Contact</h3>
+                <button type="button" class="btn"><i
+                        class=" social-media-buttons fab fa-youtube fa-2x"></i></span></button>
+                <button type="button" class="btn"><i
+                        class=" social-media-buttons fab fa-facebook-f fa-2x"></i></span></button>
+                <button type="button" class="btn"><i
+                        class="social-media-buttons fab fa-instagram fa-2x"></i></span></button>
+                <button type="button" class="btn"><i
+                        class="social-media-buttons fas fa-envelope fa-2x"></i></span></button>
+                <p>© Copyright 2020 AXLR8R FORMULA RACING</p>
+        </footer>
+
+
+    </section>
+    <script src="JS/CompetitionSeason.js"></script>
+</body>
+
+</html>
